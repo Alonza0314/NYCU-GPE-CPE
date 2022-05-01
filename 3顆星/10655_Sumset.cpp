@@ -46,6 +46,7 @@ int main(){
         if(flag){
             cout<<"no solution\n";
         }
+        setting.clear();
     }
 
     return 0;
