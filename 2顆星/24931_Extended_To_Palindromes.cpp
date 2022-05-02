@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 string input,inverse,output;
@@ -7,10 +6,7 @@ int input_length;
 int input_index,inverse_index;
 
 int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    
-    while(getline(cin,input)&&input!="0"){
+    while(cin>>input){
         inverse="";
         input_length=input.length();
         for(int i=input_length-1;i>=0;i--){
@@ -30,6 +26,5 @@ int main(){
         output=inverse.substr(inverse_index,inverse.length()-inverse_index+1);
         cout<<input<<output<<"\n";
     }
-
     return 0;
 }
